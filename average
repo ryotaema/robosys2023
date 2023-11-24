@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2022 Ryota Ema
+#SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import math
+
+ave = 0.0
+ans = 0.0
+count = 0
+
+for line in sys.stdin:
+    try:
+        num = float(line)
+        ans += num
+        count += 1
+    except ValueError:
+        pass
+
+ave = ans / count
+print("平均:",ave)
