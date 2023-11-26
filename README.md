@@ -115,5 +115,5 @@ $ chmod +x factorial
 
 
 
-* © 2023 Ryota Ema
+© 2023 Ryota Ema
 
