@@ -2,6 +2,7 @@
 #SPDX-FileCopyrightText: 2022 Ryota Ema
 #SPDX-License-Identifier: BSD-3-Clause
 
+#平均のプログラム
 import sys
 import math
 
@@ -18,4 +19,4 @@ for line in sys.stdin:
         pass
 
 ave = ans / count
-print("平均:",ave)
+print(ave)
