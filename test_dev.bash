@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -xv
+#SPDX-FileCopyrightText: 2023 Ryota Ema <rhenium4694@gmail.com>
 # SPDX-License-Iddentifier: BSD-3-Clause
 
 ng () {

@@ -2,7 +2,7 @@
 
 [![test](https://github.com/ryotaema/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/ryotaema/robosys2023/actions/workflows/test.yml)
 
-ロボットシステム学2023で使っているリポジトリ
+ロボットシステム学2023で使っているリポジトリです。
 
 ##plus
 

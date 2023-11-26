@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-#SPDX-FileCopyrightText: 2022 Ryota Ema
+#SPDX-FileCopyrightText: 2023 Ryota Ema <rhenium4694@gmail.com>
 #SPDX-License-Identifier: BSD-3-Clause
+
+#足し算のプログラムnumsというファイルから数字を読み込むときは 「./plus < nums」で実行
 import sys 
 
 ans = 0.0
+
 for line in sys.stdin:
-    ans += float(line)
+        ans += float(line)
+
 
 print(ans)

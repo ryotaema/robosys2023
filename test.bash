@@ -1,5 +1,5 @@
-#!/bin/bash
-# SPDX-FileCopyrightText: 2022 Ryuichi Ueda
+#!/bin/bash -xv
+#SPDX-FileCopyrightText: 2023 Ryota Ema <rhenium4694@gmail.com>
 # SPDX-License-Iddentifier: BSD-3-Clause
 
 ng () {
@@ -10,7 +10,7 @@ ng () {
 res=0
 
 
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./plus)   #seq 5で5つ目の数字までのする
 [ "${out}" = 15.0 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
