@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2022 Ryota Ema
+#SPDX-License-Identifier: BSD-3-Clause
+
+#分散、標準偏差のプログラム
+import sys
+import math
+
+ave = 0.0 #平均
+ans = 0.0 #合計
+count = 0
+dev = 0.0 #偏差
+sumdev = 0.0
+disper2 = 0.0 #分散
+disper1 = 0.0 #標準偏差
+devval =0.0 #偏差値
+num = []
+num1 = 0.0 
+
+for line in sys.stdin:
+    try:
+        num1 = num.append(float(line))
+        count += 1
+    except ValueError:
+        pass
+ans = sum(num)
+
+ave = ans / count
+
+for line2 in range(count):
+    try:
+        num1 = num[line2]
+        dev = num1 - ave
+        sumdev += pow(dev,2)
+    except ValueError:
+        pass
+
+disper2 = sumdev / count  #分散
+disper1 = math.floor(math.sqrt(disper2)*1000000)/1000000 #標準偏差
+
+#print(disper2)
+print(disper1)
