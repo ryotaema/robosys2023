@@ -97,7 +97,7 @@ $ chmod +x factorial
 
 ## テスト環境
 
-*Ubuntu20.04
+* Ubuntu20.04
 
 ## ライセンス関連
 
